@@ -9,10 +9,14 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
     ];
-#my packages
 
+
+
+#my packages
+#desktop manager
 services.displayManager.cosmic-greeter.enable=true;
 services.desktopManager.cosmic.enable=true;
+
 
 
 services.flatpak.enable = true;
@@ -46,7 +50,7 @@ vscodium
 
 obs-studio
 
-
+cargo
 kitty
 
 libreoffice
@@ -85,9 +89,42 @@ papirus-icon-theme
 
 bottles
 winboat
+pfetch
+
+
+cosmic-store
+audacity
+
+chromium
+vlc
+
+
+dotnet-sdk
+php
+yarn
+sqlite
+postgresql
+nodejs
+
+
+#pour la compatibilité avec les executables
+wineWow64Packages.stable
+winetricks
+wineWow64Packages.waylandFull
+lutris
+virtualbox
 
 ];
 
+
+hardware.graphics.enable = true;
+hardware.graphics.enable32Bit = true;
+
+
+
+#
+#
+#
 
 system.checks = lib.mkForce[];
 
