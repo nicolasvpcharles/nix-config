@@ -8,6 +8,12 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      #import the aplication
+      ./import/module-dev.nix
+      ./import/module-ofice.nix
+      ./import/module-utils.nix
+      ./import/module-apps.nix
+
     ];
 
 
@@ -30,89 +36,6 @@ nix.settings.experimental-features = ["nix-command""flakes"];
 nixpkgs.config.permittedInsecurePackages=[
 
 "electron-40.10.5"
-
-];
-
-
-#my nix pakages
-
-environment.systemPackages = with pkgs; [
-
-git
-wget
-curl
-fastfetch
-vim
-firefox
-
-
-vscodium
-
-obs-studio
-
-cargo
-kitty
-
-libreoffice
-rustc
-gcc
-obsidian
-cowsay
-localsend
-wine
-steam
-btop
-htop
-fzf
-unzip
-p7zip
-
-neovim
-python3
-nodejs
-cmake
-jq
-lazygit
-discord
-
-pipes
-cbonsai
-cmatrix
-
-wireshark
-nmap
-docker
-
-#fonts and icons
-nerd-fonts.jetbrains-mono
-papirus-icon-theme
-
-bottles
-winboat
-pfetch
-
-
-cosmic-store
-audacity
-
-chromium
-vlc
-
-
-dotnet-sdk
-php
-yarn
-sqlite
-postgresql
-nodejs
-
-
-#pour la compatibilité avec les executables
-wineWow64Packages.stable
-winetricks
-wineWow64Packages.waylandFull
-lutris
-virtualbox
 
 ];
 
