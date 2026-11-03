@@ -35,6 +35,22 @@ papirus-icon-theme
 nmap
 wireshark
 
+#other (chat gpt)
+tlp
+powertop
+clang
+gdb
+lldb
+rustup
+pkg-config
+ninja
+direnv
+just
+fd
+tree
+
+
+
 ];
 
 
