@@ -28,28 +28,29 @@ bottles
 lutris
 #fonts
 nerd-fonts.jetbrains-mono
+inter
 #icon-pack
 papirus-icon-theme
+
+#desktop environement personalisation
+nwg-look
+
+#fond d ecran
+variety
+waypaper
+#effect
+picom
+#widget
+conky
+mission-center
+resources
+
+#personalisation cosmic
+cosmic-ext-tweaks
 
 #other
 nmap
 wireshark
-
-#other (chat gpt)
-tlp
-powertop
-clang
-gdb
-lldb
-rustup
-pkg-config
-ninja
-direnv
-just
-fd
-tree
-
-
 
 ];
 
