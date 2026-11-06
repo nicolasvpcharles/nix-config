@@ -54,11 +54,25 @@ system.checks = lib.mkForce[];
 
 
 
+#test bootloader deepseek
 
-  # Use the GRUB 2 boot loader.
-  boot.loader.grub.enable = true;
-  boot.loader.grub.device = "/dev/sda";
-  boot.loader.grub.useOSProber = true;
+boot.loader={
+efi.canTouchEfiVariables=true ;
+grub ={
+
+enable=true ;
+device="nodev";
+efiSupport=true ;
+useOSProber=true ;
+
+};
+
+};
+
+
+#ajouter l encryption de disque
+security.pam.enableFscrypt = true;
+
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.

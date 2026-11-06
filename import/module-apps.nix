@@ -6,7 +6,8 @@ localsend
 steam
 discord
 chromium
-
+#file manager
+nautilus
 
 
 ];

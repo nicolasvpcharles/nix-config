@@ -37,6 +37,9 @@ docker
 #virtualbox
 virtualbox
 
+
+vscode
+
 ];
 
 

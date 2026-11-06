@@ -31,6 +31,8 @@ nerd-fonts.jetbrains-mono
 inter
 #icon-pack
 papirus-icon-theme
+gtk3
+whitesur-icon-theme
 
 #desktop environement personalisation
 nwg-look
@@ -51,6 +53,8 @@ cosmic-ext-tweaks
 #other
 nmap
 wireshark
+
+
 
 ];
 
