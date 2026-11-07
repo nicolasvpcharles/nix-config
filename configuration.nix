@@ -56,17 +56,19 @@ system.checks = lib.mkForce[];
 
 #test bootloader deepseek
 
-boot.loader={
-efi.canTouchEfiVariables=true ;
-grub ={
+boot.loader = {
+  systemd-boot.enable = false;
 
-enable=true ;
-device="nodev";
-efiSupport=true ;
-useOSProber=true ;
+  efi = {
+    canTouchEfiVariables = true;
+  };
 
-};
-
+  grub = {
+    enable = true;
+    efiSupport = true;
+    device = "nodev";
+    useOSProber = true;
+  };
 };
 
 
