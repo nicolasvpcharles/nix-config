@@ -49,7 +49,7 @@ hardware.graphics.enable32Bit = true;
 #
 #
 
-system.checks = lib.mkForce[];
+
 
 
 
@@ -70,10 +70,6 @@ boot.loader = {
     useOSProber = true;
   };
 };
-
-
-#ajouter l encryption de disque
-security.pam.enableFscrypt = true;
 
 
   networking.hostName = "nixos"; # Define your hostname.
